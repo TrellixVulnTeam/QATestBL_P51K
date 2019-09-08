@@ -12,7 +12,7 @@ class TestsBl(unittest.TestCase):
         self.first_selection = First_selection(self.driver)
         self.second_selection = Second_selection(self.driver)
 
-    def test_ebay(self):
+    def test_sort_op(self):
         self.home.search_filter_products('shoes')
         self.first_selection.get_amount()
         self.home.sort_products()
@@ -25,3 +25,5 @@ class TestsBl(unittest.TestCase):
         self.driver.close()
         self.driver.quit()
 
+if __name__ == '__main__':
+    unittest.main()
