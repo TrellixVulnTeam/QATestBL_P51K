@@ -15,11 +15,20 @@ class TestsBl(unittest.TestCase):
     def test_sort_op(self):
         self.home.search_filter_products('shoes')
         self.first_selection.get_amount()
-        self.home.sort_products()
-        self.first_selection.test_order()
-        self.first_selection.get_info_asc()
-        self.home.re_sort_products()
-        self.second_selection.get_info_desc()
+        # self.home.sort_products()
+        # self.first_selection.test_order()
+        # self.first_selection.get_info_asc()
+        # self.home.re_sort_products()
+        # self.second_selection.get_info_desc()
+
+    def test_sort_op_2(self):
+        self.home.search_filter_products('shoes')
+        self.first_selection.get_amount()
+        # self.home.sort_products()
+        # self.first_selection.test_order()
+        # self.first_selection.get_info_asc()
+        # self.home.re_sort_products()
+        # self.second_selection.get_info_desc()
 
     def tearDown(self):
         self.driver.close()
